@@ -1,10 +1,14 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import RoutePages from "./utilities/routePages";
 
 function App() {
   return (
-    <div className="App">
-     <h1>Find my car staging</h1>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <RoutePages />
+      </div>
+    </BrowserRouter>
   );
 }
 
