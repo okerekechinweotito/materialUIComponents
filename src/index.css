@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #ffff;
+  background-color: #0a1929 !important;
 }
 
 .globalBackgroundColor {
