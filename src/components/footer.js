@@ -13,12 +13,7 @@ const style = {
 
 function Footer() {
   return (
-    <Container
-      sx={style.footer}
-      component="footer"
-      maxWidth="xl"
-      className="globalBackgroundColor"
-    >
+    <Container sx={style.footer} component="footer" maxWidth="xl">
       <Typography
         component="h1"
         variant="h6"
