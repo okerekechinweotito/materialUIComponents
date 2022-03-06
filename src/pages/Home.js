@@ -2,13 +2,13 @@ import React from "react";
 import { Grid } from "@mui/material";
 
 const style = {
-  backgroundImageBox: {
+  /*  backgroundImageBox: {
     background:
       "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://wallpaperaccess.com/full/3732250.jpg)",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-  },
+  }, */
 };
 const Home = () => {
   return (

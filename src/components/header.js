@@ -15,6 +15,14 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 
+
+const styles = {
+  header: {
+    marginBottom: "1em",
+    padding: "1em",
+    fontWeight: "bolder",
+  },
+};
 const pages = [
   "Register Stolen Car",
   "Recently Stolen Vehicles",
@@ -63,7 +71,7 @@ const HideAppBar = (props) => {
         <AppBar
           position="sticky"
           className="globalBackgroundColor"
-          sx={{ marginBottom: "1em" }}
+          style={styles.header}
         >
           <Container maxWidth="xl">
             <Toolbar disableGutters>
@@ -71,7 +79,12 @@ const HideAppBar = (props) => {
                 variant="h5"
                 noWrap
                 component="div"
-                sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+                sx={{
+                  mr: 2,
+                  display: { xs: "none", md: "flex" },
+                  fontWeight: "bolder",
+                  color: "#86EFAC",
+                }}
               >
                 FindMyCar
               </Typography>
@@ -83,9 +96,8 @@ const HideAppBar = (props) => {
                   aria-controls="menu-appbar"
                   aria-haspopup="true"
                   onClick={handleOpenNavMenu}
-                  color="inherit"
                 >
-                  <MenuIcon />
+                  <MenuIcon sx={{ color: "#86EFAC" }} />
                 </IconButton>
                 <Menu
                   id="menu-appbar"
@@ -116,16 +128,31 @@ const HideAppBar = (props) => {
                 variant="h5"
                 noWrap
                 component="div"
-                sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+                sx={{
+                  flexGrow: 1,
+                  display: { xs: "flex", md: "none" },
+                  fontWeight: "bolder",
+                  color: "#86EFAC",
+                }}
               >
                 FindMyCar
               </Typography>
-              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  display: { xs: "none", md: "flex" },
+                }}
+              >
                 {pages.map((page) => (
                   <Button
                     key={page}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
+                    sx={{
+                      my: 2,
+                      color: "#86EFAC",
+                      display: "block",
+                      fontWeight: "bolder",
+                    }}
                   >
                     {page}
                   </Button>
