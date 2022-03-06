@@ -1,14 +1,9 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, Container, Box } from "@mui/material";
 
 const style = {
-  /*  backgroundImageBox: {
-    background:
-      "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://wallpaperaccess.com/full/3732250.jpg)",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-  }, */
+  homeSection1: {},
+  homeSection1Child1: {},
 };
 const Home = () => {
   return (
@@ -23,9 +18,14 @@ const Home = () => {
         xs={4}
         sm={8}
         md={12}
-        style={style.backgroundImageBox}
+        style={style.homeSection1}
         sx={{ height: { xs: "25em", md: "40em" } }}
-      ></Grid>
+      >
+        <Container maxWidth="xl" style={style.homeSection1Child1}>
+          <Box>Box1</Box>
+          <Box>Box2</Box>
+        </Container>
+      </Grid>
     </Grid>
   );
 };
