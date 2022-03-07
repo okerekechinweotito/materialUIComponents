@@ -2,7 +2,9 @@ import React from "react";
 import { Grid, Container, Box } from "@mui/material";
 
 const style = {
-  homeSection1: {},
+  homeSection1: {
+    background: "red",
+  },
   homeSection1Child1: {},
 };
 const Home = () => {
@@ -21,10 +23,10 @@ const Home = () => {
         style={style.homeSection1}
         sx={{ height: { xs: "25em", md: "40em" } }}
       >
-        <Container maxWidth="xl" style={style.homeSection1Child1}>
+        <Grid item xs={4} sm={8} md={12} style={style.homeSection1Child1}>
           <Box>Box1</Box>
           <Box>Box2</Box>
-        </Container>
+        </Grid>
       </Grid>
     </Grid>
   );
