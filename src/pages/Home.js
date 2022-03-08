@@ -1,32 +1,29 @@
 import React from "react";
-import { Grid, Container, Box } from "@mui/material";
+import { Grid } from "@mui/material";
 
-const style = {
-  homeSection1: {
-    background: "red",
-  },
-  homeSection1Child1: {},
-};
 const Home = () => {
   return (
     <Grid
       container
-      spacing={{ xs: 2, md: 3 }}
       columns={{ xs: 4, sm: 8, md: 12 }}
       component="article"
+      sx={{ justifyContent: "center" }}
     >
       <Grid
+        container
         item
         xs={4}
         sm={8}
-        md={12}
-        style={style.homeSection1}
-        sx={{ height: { xs: "25em", md: "40em" } }}
+        md={10}
+        sx={{
+          height: { xs: "25em", md: "40em" },
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: "space-between",
+          background: "red",
+        }}
       >
-        <Grid item xs={4} sm={8} md={12} style={style.homeSection1Child1}>
-          <Box>Box1</Box>
-          <Box>Box2</Box>
-        </Grid>
+        <section>Side 1</section>
+        <section>Side 2</section>
       </Grid>
     </Grid>
   );

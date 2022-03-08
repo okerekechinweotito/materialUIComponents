@@ -6,7 +6,6 @@ import Link from "@mui/material/Link";
 const style = {
   footer: {
     textAlign: "center",
-    marginTop: "5em",
     padding: "1.5em",
   },
 };
